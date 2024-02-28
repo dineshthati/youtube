@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const BASE_URL = "https://youtube138.p.rapidapi.com";
 
 const options = {
@@ -8,7 +7,7 @@ const options = {
     gl: "US",
   },
   headers: {
-    "X-RapidAPI-Key": "1e7c64e6c5mshd0f178a414169aep16bc1fjsnf385d9334255",
+    "X-RapidAPI-Key": String(import.meta.env.VITE_API_KEY),
     "X-RapidAPI-Host": "youtube138.p.rapidapi.com",
   },
 };
